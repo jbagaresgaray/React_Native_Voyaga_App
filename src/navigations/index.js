@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import OnboardingScreen from '../screens/Onboarding';
 import {ROUTES} from '../constants/routes';
+import LandingScreen from '../screens/Landing';
 
 const RootStack = createStackNavigator();
 const navigationOptions = {
@@ -21,12 +22,12 @@ const RootNavigators = () => {
         component={OnboardingScreen}
         options={{headerShown: false}}
       />
+      <RootStack.Screen
+        name={ROUTES.LANDING}
+        component={LandingScreen}
+        options={{headerShown: false}}
+      />
       {/* <RootStack.Screen
-      name="Landing"
-      component={Landing}
-      options={{headerShown: false}}
-    />
-    <RootStack.Screen
       name="Register"
       options={{
         headerTransparent: true,

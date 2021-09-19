@@ -1,3 +1,4 @@
+import {useNavigation} from '@react-navigation/native';
 import React, {useRef, useState} from 'react';
 import {
   View,
@@ -13,11 +14,12 @@ import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/Ionicons';
 import COLORS from '../../constants/Colors';
 import OnboardingArr from '../../constants/onboarding';
+import {ROUTES} from '../../constants/routes';
 
 const {width, height} = Dimensions.get('window');
 
 const OnboardingScreen = () => {
-  const scrollX = useRef(new Animated.Value(0)).current;
+  const navigation = useNavigation();
   const [activeIndex, setActiveIndex] = useState(0);
   const [appWidth, setAppWidth] = useState(width);
   const offset = width * activeIndex;
@@ -76,6 +78,10 @@ const OnboardingScreen = () => {
     internals.offset = offset;
     // Update index in the state
     setActiveIndex(index);
+  };
+
+  const onSkipOnboarding = () => {
+    navigation.navigate(ROUTES.LANDING);
   };
 
   const renderPagination = () => {
@@ -143,7 +149,9 @@ const OnboardingScreen = () => {
       </ScrollView>
       <View style={styles.Onboarding__Footer_PaginationView}>
         <View>{renderPagination()}</View>
-        <TouchableOpacity style={styles.Onboarding__Footer_Pagination_Skip_View}>
+        <TouchableOpacity
+          style={styles.Onboarding__Footer_Pagination_Skip_View}
+          onPress={onSkipOnboarding}>
           <Text style={styles.Onboarding__Footer_Pagination_Skip}>SKIP</Text>
           <Icon
             name="arrow-forward-outline"
