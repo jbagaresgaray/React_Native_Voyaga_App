@@ -4,6 +4,15 @@ import {createStackNavigator} from '@react-navigation/stack';
 import OnboardingScreen from '../screens/Onboarding';
 import {ROUTES} from '../constants/routes';
 import LandingScreen from '../screens/Landing';
+import RegisterScreen from '../screens/Register';
+import LoginScreen from '../screens/Login';
+import ResetScreen from '../screens/Reset';
+import VerifyScreen from '../screens/Verify';
+import AllowLocationScreen from '../screens/AllowLocation';
+import AllowNotificationScreen from '../screens/AllowNotification';
+import CompleteProfileScreen from '../screens/CompleteProfile';
+import CompleteProfileThankYouScreen from '../screens/CompleteThankYou';
+import ForgotScreen from '../screens/Forgot';
 
 const RootStack = createStackNavigator();
 const navigationOptions = {
@@ -27,25 +36,28 @@ const RootNavigators = () => {
         component={LandingScreen}
         options={{headerShown: false}}
       />
+      <RootStack.Screen
+        name={ROUTES.ALLOW_LOCATION}
+        component={AllowLocationScreen}
+      />
+      <RootStack.Screen
+        name={ROUTES.ALLOW_NOTIFICATION}
+        component={AllowNotificationScreen}
+      />
+      <RootStack.Screen
+        name={ROUTES.COMPLETE_PROFILE}
+        component={CompleteProfileScreen}
+      />
+      <RootStack.Screen
+        name={ROUTES.COMPLETE_PROFILE_THANK_YOU}
+        component={CompleteProfileThankYouScreen}
+      />
+      <RootStack.Screen name={ROUTES.FORGOT} component={ForgotScreen} />
+      <RootStack.Screen name={ROUTES.LOGIN} component={LoginScreen} />
+      <RootStack.Screen name={ROUTES.REGISTER} component={RegisterScreen} />
+      <RootStack.Screen name={ROUTES.RESET_PASSWORD} component={ResetScreen} />
+      <RootStack.Screen name={ROUTES.VERIFY} component={VerifyScreen} />
       {/* <RootStack.Screen
-      name="Register"
-      options={{
-        headerTransparent: true,
-        headerTintColor: '#111',
-        headerTitle: () => null,
-      }}
-      component={Register}
-    />
-    <RootStack.Screen
-      name="Login"
-      options={{
-        headerTransparent: true,
-        headerTintColor: '#111',
-        headerTitle: () => null,
-      }}
-      component={Login}
-    />
-    <RootStack.Screen
       name="Main"
       component={BottomTabNavigator}
       options={{headerShown: false}}

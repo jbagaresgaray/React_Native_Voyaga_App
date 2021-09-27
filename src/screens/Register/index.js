@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, SafeAreaView, StyleSheet, StatusBar} from 'react-native';
 
-const ForgotScreen = () => {
+const RegisterScreen = () => {
   return (
     <SafeAreaView style={styles.SafeAreaView}>
       <StatusBar barStyle="default" />
@@ -9,7 +9,7 @@ const ForgotScreen = () => {
   );
 };
 
-export default ForgotScreen;
+export default RegisterScreen;
 
 const styles = StyleSheet.create({
   SafeAreaView: {
