@@ -13,11 +13,23 @@ import AllowNotificationScreen from '../screens/AllowNotification';
 import CompleteProfileScreen from '../screens/CompleteProfile';
 import CompleteProfileThankYouScreen from '../screens/CompleteThankYou';
 import ForgotScreen from '../screens/Forgot';
+import COLORS from '../constants/Colors';
 
 const RootStack = createStackNavigator();
 const navigationOptions = {
   gestureEnabled: false,
   headerBackTitleVisible: false,
+  headerTransparent: true,
+  headerTintColor: COLORS.colorBackButton,
+  headerStyle: {
+    shadowColor: 'transparent',
+    shadowRadius: 0,
+    shadowOffset: {
+      height: 0,
+    },
+    elevation: 0,
+    borderBottomWidth: 0,
+  },
 };
 
 const RootNavigators = () => {

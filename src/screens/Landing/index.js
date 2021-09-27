@@ -45,6 +45,7 @@ const LandingScreen = () => {
           <View style={styles.FooterTabView}>
             <AppButton
               title="Sign In"
+              variant="secondary"
               onPress={() => navigation.navigate('Login')}
             />
             <View style={styles.BottomSeparatorView}>
@@ -67,7 +68,7 @@ const LandingScreen = () => {
             </View>
             <View style={styles.BottomSeparatorView}>
               <Text style={styles.BottomText}>
-                Don’t have an account? {' '}
+                Don’t have an account?{' '}
                 <Text
                   style={styles.BottomText2}
                   onPress={() => navigation.navigate('Register')}>
