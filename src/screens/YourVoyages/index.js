@@ -1,18 +1,12 @@
 import {useNavigation} from '@react-navigation/core';
 import React, {useLayoutEffect} from 'react';
-import {
-  StatusBar,
-  SafeAreaView,
-  StyleSheet,
-  View,
-  Platform,
-} from 'react-native';
+import {StatusBar, SafeAreaView, StyleSheet, View} from 'react-native';
 
 import AppHeaderText from '../../components/AppHeaderText';
 
 import COLORS from '../../constants/Colors';
 
-const YourWorldScreen = () => {
+const YourVoyagesScreen = () => {
   const navigation = useNavigation();
 
   useLayoutEffect(() => {
@@ -27,13 +21,13 @@ const YourWorldScreen = () => {
     <SafeAreaView style={styles.SafeAreaView}>
       <StatusBar barStyle="default" />
       <View style={styles.Content}>
-        <AppHeaderText subheader="Your World" />
+        <AppHeaderText subheader="Your Voyages" />
       </View>
     </SafeAreaView>
   );
 };
 
-export default YourWorldScreen;
+export default YourVoyagesScreen;
 
 const styles = StyleSheet.create({
   SafeAreaView: {

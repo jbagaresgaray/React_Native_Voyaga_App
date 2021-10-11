@@ -3,11 +3,12 @@ import {View, Text, StyleSheet} from 'react-native';
 import COLORS from '../../constants/Colors';
 import {FONT_LIGHT, FONT_SEMI_BOLD} from '../../constants/Typography';
 
-const index = ({header, message}) => {
+const index = ({header, subheader, message}) => {
   return (
     <View style={styles.Container}>
-      <Text style={styles.HeaderText}>{header}</Text>
-      <Text style={styles.MessageText}>{message}</Text>
+      {header && <Text style={styles.HeaderText}>{header}</Text>}
+      {subheader && <Text style={styles.SubHeaderText}>{subheader}</Text>}
+      {message && <Text style={styles.MessageText}>{message}</Text>}
     </View>
   );
 };
@@ -22,6 +23,13 @@ const styles = StyleSheet.create({
     fontSize: 28,
     lineHeight: 41,
     letterSpacing: 0.78,
+    color: COLORS.colorStandard,
+    ...FONT_SEMI_BOLD,
+  },
+  SubHeaderText: {
+    fontSize: 24,
+    lineHeight: 29,
+    letterSpacing: 0.67,
     color: COLORS.colorStandard,
     ...FONT_SEMI_BOLD,
   },

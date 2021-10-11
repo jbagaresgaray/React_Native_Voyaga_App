@@ -1,7 +1,13 @@
 import {useNavigation} from '@react-navigation/core';
 import {useHeaderHeight} from '@react-navigation/stack';
 import React, {useLayoutEffect} from 'react';
-import {View, ScrollView, SafeAreaView, StyleSheet, StatusBar} from 'react-native';
+import {
+  View,
+  ScrollView,
+  SafeAreaView,
+  StyleSheet,
+  StatusBar,
+} from 'react-native';
 
 import AppHeaderText from '../../components/AppHeaderText';
 import AppButton from '../../components/AppButton';
@@ -42,7 +48,7 @@ const CompleteProfileScreen = () => {
         <View style={styles.FooterView}>
           <AppButton
             title="Done"
-            onPress={() => navigation.navigate(ROUTES.YOUR_WORLD)}
+            onPress={() => navigation.navigate(ROUTES.MAIN)}
           />
           <AppButton
             title="Continue to App"

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Bars</title>
+    <defs>
+        <polygon id="path-1" points="0.734022 -0.490825 413.632782 -0.490825 413.632782 1669.985 0.734022 1669.985"></polygon>
+        <filter x="-50.5%" y="-8.9%" width="201.2%" height="124.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="60" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="60" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="414" height="83"></rect>
+        <filter x="-2.4%" y="-14.5%" width="104.8%" height="124.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.117647059   0 0 0 0 0.117647059   0 0 0 0 0.117647059  0 0 0 0.138193837 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M20.0361123,-3.89104963e-08 L20.2728845,0.00752801229 C20.9021987,0.0475891654 21.5124703,0.246833491 22.045685,0.588277954 C23.7211119,1.66113907 24.2491531,3.85056452 23.2799651,5.56092754 L23.1743491,5.73608732 L14.5264116,19.2410855 C14.2927188,19.6060305 13.982735,19.9160143 13.6177899,20.1497072 C12.274169,21.010096 10.5038766,20.6647341 9.57675035,19.3920349 L9.47358836,19.2410855 L8.24395127,17.3221186 C8.24096502,17.3109355 8.23795236,17.2996995 8.23491328,17.2884108 L8.22665872,17.1882764 C7.91125562,16.6869923 7.72881356,16.0936155 7.72881356,15.4576271 C7.72881356,14.2141352 8.42626262,13.1335412 9.45131558,12.5856904 L11.600409,10.9931458 L13.3528719,15.7433353 L14.6051485,14.6456121 L14.1588542,8.886973 L16.4521466,6.70109872 C16.8676228,6.37240219 16.9385333,5.76436488 16.6109157,5.33981013 C16.2832699,4.91527744 15.6834117,4.83790682 15.2679356,5.16660335 L12.5438628,6.88148437 L7.39593946,4.91724096 L5.95381468,6.03778833 L9.98474788,8.99280432 C9.19009939,9.59350094 8.49809309,10.0922527 7.90872899,10.4890595 C7.41650275,11.0073378 6.72514354,11.3293849 5.9594944,11.3293849 C5.10405413,11.3293849 4.34135015,10.9273727 3.84561991,10.2997627 C3.81598363,10.2991792 3.78279553,10.299012 3.74895738,10.2988727 L0.955967427,5.93959525 C0.558214217,5.3184464 0.346818198,4.5963122 0.346818198,3.85872593 C0.346818198,1.79420778 1.96814013,0.108369663 4.00697464,0.00502091138 L4.20554417,-3.89104963e-08 L4.49947472,0.0162923618 C6.67503277,0.251681077 9.28404429,2.9586513 11.7966102,2.9586513 C14.4233836,2.9586513 17.3088411,-3.89104963e-08 20.0361123,-3.89104963e-08 Z" id="path-5"></path>
+        <linearGradient x1="73.4525137%" y1="83.4413957%" x2="-67.3669814%" y2="-137.536608%" id="linearGradient-7">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Travelling-Friends" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="traveling-friends-voyages" transform="translate(-46.000000, -1252.000000)">
+            <g id="bg">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#EEEEEE" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Navbar/Training" transform="translate(0.000000, 1234.000000)">
+                <g id="Bar">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <g id="local_bar-24px" transform="translate(46.000000, 18.000000)">
+                    <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                    <g id="Group" transform="translate(1.000000, 2.000000)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use id="Mask" fill="#BBBBBB" xlink:href="#path-5"></use>
+                        <path d="M16.6274084,6.38442245 C17.0788275,7.00762331 17.0210013,7.65553771 16.4539299,8.32816564 C15.8868585,9.00079357 15.0824664,9.80654692 14.0407536,10.7454257 L14.6051485,14.6456121 C14.5403401,15.2647688 14.41772,15.7215921 14.2372881,16.016082 C14.0568562,16.3105719 13.7804797,16.6090385 13.4081585,16.9114818 L11.7169083,12.9048455 C9.42836534,14.1939749 8.41097975,16.0673872 8.66475151,18.5250824 C8.91852326,20.9827776 8.79163739,21.4518179 8.28409387,19.9322034 L4.06779661,15.4242581 L16.6274084,6.38442245 Z" id="Path-3" fill-opacity="0.5" fill="url(#linearGradient-7)" mask="url(#mask-6)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

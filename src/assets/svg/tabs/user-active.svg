@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <defs>
+        <polygon id="path-1" points="0.734022 -1.097198 413.632782 -1.097198 413.632782 998.1964 0.734022 998.1964"></polygon>
+        <filter x="-50.5%" y="-14.9%" width="201.2%" height="141.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="60" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="60" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="414" height="83"></rect>
+        <filter x="-2.4%" y="-14.5%" width="104.8%" height="124.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.117647059   0 0 0 0 0.117647059   0 0 0 0 0.117647059  0 0 0 0.138193837 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="36.6250531%" y1="69.213902%" x2="89.8672425%" y2="0%" id="linearGradient-5">
+            <stop stop-color="#D23078" offset="0%"></stop>
+            <stop stop-color="#FE6161" offset="72.5625797%"></stop>
+            <stop stop-color="#FF7955" offset="100%"></stop>
+        </linearGradient>
+        <path d="M12,12 C14.21,12 16,10.21 16,8 C16,5.79 14.21,4 12,4 C9.79,4 8,5.79 8,8 C8,10.21 9.79,12 12,12 Z M12,14 C9.33,14 4,15.34 4,18 L4,20 L20,20 L20,18 C20,15.34 14.67,14 12,14 Z" id="path-6"></path>
+    </defs>
+    <g id="Your-Account" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="your-account" transform="translate(-343.000000, -935.000000)">
+            <g id="bg">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#EEEEEE" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Navbar/Training" transform="translate(-0.000000, 917.000000)">
+                <g id="Bar">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <g id="person-24px-(1)" transform="translate(343.000000, 18.000000)">
+                    <g id="Shape">
+                        <use fill="#E9486D" xlink:href="#path-6"></use>
+                        <use fill-opacity="0.75" fill="url(#linearGradient-5)" xlink:href="#path-6"></use>
+                    </g>
+                    <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

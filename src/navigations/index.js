@@ -13,7 +13,9 @@ import AllowNotificationScreen from '../screens/AllowNotification';
 import CompleteProfileScreen from '../screens/CompleteProfile';
 import CompleteProfileThankYouScreen from '../screens/CompleteThankYou';
 import ForgotScreen from '../screens/Forgot';
+
 import COLORS from '../constants/Colors';
+import TabsNavigator from './tabs';
 
 const RootStack = createStackNavigator();
 const navigationOptions = {
@@ -69,11 +71,11 @@ const RootNavigators = () => {
       <RootStack.Screen name={ROUTES.REGISTER} component={RegisterScreen} />
       <RootStack.Screen name={ROUTES.RESET_PASSWORD} component={ResetScreen} />
       <RootStack.Screen name={ROUTES.VERIFY} component={VerifyScreen} />
-      {/* <RootStack.Screen
-      name="Main"
-      component={BottomTabNavigator}
-      options={{headerShown: false}}
-    /> */}
+      <RootStack.Screen
+        name="Main"
+        component={TabsNavigator}
+        options={{headerShown: false}}
+      />
     </RootStack.Navigator>
   );
 };

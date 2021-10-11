@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <defs>
+        <polygon id="path-1" points="0.735795 0.262191 414.631895 0.262191 414.631895 290.4762 0.735795 290.4762"></polygon>
+        <filter x="-3.9%" y="-4.4%" width="107.9%" height="111.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="414" height="83"></rect>
+        <filter x="-2.4%" y="-14.5%" width="104.8%" height="124.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.117647059   0 0 0 0 0.117647059   0 0 0 0 0.117647059  0 0 0 0.138193837 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Travelling-Friends" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Users-been-details-Copy" transform="translate(-195.000000, -1386.000000)">
+            <polygon id="bg" fill="#EEEEEE" points="-0.264205 -0.490825 413.631895 -0.490825 413.631895 1669.985 -0.264205 1669.985"></polygon>
+            <g id="base-copy-3" transform="translate(-1.000000, 1129.000000)">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#F2F2F2" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Navbar/Training" transform="translate(0.000000, 1368.000000)">
+                <g id="Bar">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <g id="airplanemode_active-24px-(1)" transform="translate(195.000000, 18.000000)">
+                    <path d="M21,16 L21,14 L13,9 L13,3.5 C13,2.67 12.33,2 11.5,2 C10.67,2 10,2.67 10,3.5 L10,9 L2,14 L2,16 L10,13.5 L10,19 L8,20.5 L8,22 L11.5,21 L15,22 L15,20.5 L13,19 L13,13.5 L21,16 Z" id="Path" fill="#BBBBBB" fill-rule="nonzero"></path>
+                    <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

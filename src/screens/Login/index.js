@@ -38,6 +38,10 @@ const LoginScreen = () => {
     navigation.navigate(ROUTES.FORGOT);
   };
 
+  const onLogin = () => {
+    navigation.navigate(ROUTES.MAIN);
+  };
+
   return (
     <SafeAreaView
       style={{
@@ -61,7 +65,7 @@ const LoginScreen = () => {
           />
         </View>
         <View style={styles.FooterView}>
-          <AppButton title="Sign In" />
+          <AppButton title="Sign In" onPress={onLogin} />
           <View style={styles.FooterViewText}>
             <Text style={styles.CreateAccountLabel}>
               Don't have an Account?
