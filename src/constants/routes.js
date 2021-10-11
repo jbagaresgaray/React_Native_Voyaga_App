@@ -10,4 +10,5 @@ export const ROUTES = {
   ALLOW_NOTIFICATION: 'AllowNotication',
   COMPLETE_PROFILE: 'CompleteProfile',
   COMPLETE_PROFILE_THANK_YOU: 'CompleteProfileThankYou',
+  YOUR_WORLD: 'YourWorldScreen',
 };

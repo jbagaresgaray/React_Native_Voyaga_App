@@ -7,7 +7,6 @@ import {
   SafeAreaView,
   StyleSheet,
   StatusBar,
-  Dimensions,
 } from 'react-native';
 
 import AppHeaderText from '../../components/AppHeaderText';
@@ -18,6 +17,7 @@ import {ROUTES} from '../../constants/routes';
 import COLORS from '../../constants/Colors';
 import {FONT_REGULAR} from '../../constants/Typography';
 import AppCheckbox from '../../components/AppCheckbox';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const RegisterScreen = () => {
   const navigation = useNavigation();
@@ -45,7 +45,7 @@ const RegisterScreen = () => {
         marginTop: headerHeight,
       }}>
       <StatusBar barStyle="default" />
-      <View style={styles.RegisterScreen}>
+      <ScrollView contentContainerStyle={styles.RegisterScreen}>
         <AppHeaderText
           header="Sign Up"
           message="Please fill in the information below"
@@ -89,7 +89,7 @@ const RegisterScreen = () => {
             />
           </View>
         </View>
-      </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };

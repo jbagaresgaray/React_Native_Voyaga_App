@@ -10,6 +10,7 @@ import AppLink from '../../components/AppLink';
 import AppButton from '../../components/AppButton';
 import COLORS from '../../constants/Colors';
 import {FONT_BOLD, FONT_REGULAR} from '../../constants/Typography';
+import {ROUTES} from '../../constants/routes';
 
 const VerifyScreen = () => {
   const navigation = useNavigation();
@@ -68,7 +69,10 @@ const VerifyScreen = () => {
           />
         </View>
         <View style={styles.FooterView}>
-          <AppButton title="Submit" />
+          <AppButton
+            title="Submit"
+            onPress={() => navigation.navigate(ROUTES.ALLOW_LOCATION)}
+          />
           <View style={styles.FooterViewText}>
             <Text style={styles.CreateAccountLabel}>
               Didn't receive any code?
