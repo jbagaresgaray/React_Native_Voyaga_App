@@ -18,6 +18,7 @@ import AppLink from '../../components/AppLink';
 import COLORS from '../../constants/Colors';
 
 import {FONT_MEDIUM, FONT_REGULAR} from '../../constants/Typography';
+import {ROUTES} from '../../constants/routes';
 
 const LoginScreen = () => {
   const navigation = useNavigation();
@@ -28,6 +29,14 @@ const LoginScreen = () => {
       headerTitle: () => undefined,
     });
   }, [navigation]);
+
+  const onRegister = () => {
+    navigation.navigate(ROUTES.REGISTER);
+  };
+
+  const onForgotPassword = () => {
+    navigation.navigate(ROUTES.FORGOT);
+  };
 
   return (
     <SafeAreaView
@@ -48,6 +57,7 @@ const LoginScreen = () => {
             containerStyle={styles.ForgotPassword}
             labelStyle={styles.ForgotPasswordText}
             label="Forgot password"
+            onPress={onForgotPassword}
           />
         </View>
         <View style={styles.FooterView}>
@@ -59,6 +69,7 @@ const LoginScreen = () => {
             <AppLink
               labelStyle={styles.CreateAccountLink}
               label="Create Account"
+              onPress={onRegister}
             />
           </View>
         </View>

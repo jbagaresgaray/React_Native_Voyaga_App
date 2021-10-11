@@ -19,11 +19,16 @@ import GoogleSVG from '../../assets/svg/Google.svg';
 import InstagramSVG from '../../assets/svg/Instagram.svg';
 import backgroundImg from '../../assets/img/landing.png';
 import {FONT_BOLD, FONT_LIGHT, FONT_REGULAR} from '../../constants/Typography';
+import { ROUTES } from '../../constants/routes';
 
 const {width, height} = Dimensions.get('window');
 
 const LandingScreen = () => {
   const navigation = useNavigation();
+
+  const onRegister = () => {
+    navigation.navigate(ROUTES.REGISTER);
+  };
 
   return (
     <View style={styles.SafeAreaView}>
@@ -71,7 +76,7 @@ const LandingScreen = () => {
                 Don’t have an account?{' '}
                 <Text
                   style={styles.BottomText2}
-                  onPress={() => navigation.navigate('Register')}>
+                  onPress={onRegister}>
                   Create Account
                 </Text>
               </Text>

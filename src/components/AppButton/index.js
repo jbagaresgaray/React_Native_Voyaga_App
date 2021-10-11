@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import COLORS from '../../constants/Colors';
 import {FONT_SEMI_BOLD} from '../../constants/Typography';
 
-const AppButton = ({onPress, title, variant}) => {
+const AppButton = ({onPress, title, variant, type}) => {
   const primaryColors = {
     colors: ['#D23078', '#FE6161', '#FF7955'],
     location: [0, 0.5, 1],
@@ -20,33 +20,55 @@ const AppButton = ({onPress, title, variant}) => {
     end: {x: 1, y: 0},
   };
 
+  const clearColors = {
+    colors: ['transparent', 'transparent', 'transparent'],
+    location: [0, 0.5, 1],
+    start: {x: 0.46, y: 0.9},
+    end: {x: 0.46, y: 0},
+  };
+
   const renderButtonStyle = () => {
-    if (variant === 'primary') {
-      return styles.AppButtonPrimary;
-    } else if (variant === 'secondary') {
-      return styles.AppButtonSecondary;
+    if (type === 'clear') {
+      return styles.AppButtonClear;
+    } else if (type === 'outline') {
     } else {
-      return styles.AppButtonSecondary;
+      if (variant === 'primary') {
+        return styles.AppButtonPrimary;
+      } else if (variant === 'secondary') {
+        return styles.AppButtonSecondary;
+      } else {
+        return styles.AppButtonSecondary;
+      }
     }
   };
 
   const renderButtonGradientProps = () => {
-    if (variant === 'primary') {
-      return primaryColors;
-    } else if (variant === 'secondary') {
-      return secondaryColors;
+    if (type === 'clear') {
+      return clearColors;
+    } else if (type === 'outline') {
     } else {
-      return secondaryColors;
+      if (variant === 'primary') {
+        return primaryColors;
+      } else if (variant === 'secondary') {
+        return secondaryColors;
+      } else {
+        return secondaryColors;
+      }
     }
   };
 
   const renderTitleStyle = () => {
-    if (variant === 'primary') {
-      return styles.AppButtonTitlePrimary;
-    } else if (variant === 'secondary') {
-      return styles.AppButtonTitleSecondary;
+    if (type === 'clear') {
+      return styles.AppButtonTitleClear;
+    } else if (type === 'outline') {
     } else {
-      return styles.AppButtonTitleSecondary;
+      if (variant === 'primary') {
+        return styles.AppButtonTitlePrimary;
+      } else if (variant === 'secondary') {
+        return styles.AppButtonTitleSecondary;
+      } else {
+        return styles.AppButtonTitleSecondary;
+      }
     }
   };
 
@@ -61,6 +83,7 @@ const AppButton = ({onPress, title, variant}) => {
       ])}
       activeOpacity={0.8}
       title={title}
+      type={type}
       onPress={onPress}
     />
   );
@@ -68,6 +91,7 @@ const AppButton = ({onPress, title, variant}) => {
 
 AppButton.propTypes = {
   variant: PropTypes.oneOf(['primary', 'secondary']),
+  type: PropTypes.oneOf(['outline', 'clear']),
 };
 
 AppButton.defaultProps = {
@@ -80,12 +104,17 @@ const styles = StyleSheet.create({
   AppButton: {
     height: 53,
     borderRadius: 25,
+    marginBottom: 6,
+    marginTop: 6,
   },
   AppButtonPrimary: {
     backgroundColor: COLORS.colorPink,
   },
   AppButtonSecondary: {
     backgroundColor: COLORS.colorWhite,
+  },
+  AppButtonClear: {
+    backgroundColor: 'transparent',
   },
   AppButtonTitle: {
     fontSize: 16,
@@ -99,5 +128,8 @@ const styles = StyleSheet.create({
   },
   AppButtonTitleSecondary: {
     color: COLORS.colorPink,
+  },
+  AppButtonTitleClear: {
+    color: COLORS.colorNote,
   },
 });
