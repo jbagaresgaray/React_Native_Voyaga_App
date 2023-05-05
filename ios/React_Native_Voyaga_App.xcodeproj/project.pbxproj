@@ -13,8 +13,10 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		17D9894DE1E24B50BFE5552A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFC1B5A4EEC142D1A0144687 /* Montserrat-Regular.ttf */; };
+		1C1B279779ADB57F558E3930 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFE605F2ED9A03305DA8A3 /* ExpoModulesProvider.swift */; };
 		3908EC92669347159B3EB7B6 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E74C8742B5B5495ABDE4261E /* Montserrat-BoldItalic.ttf */; };
 		4BC29C6A5B664D8EA931509D /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B94663D7BC04821B14AF63C /* Montserrat-ExtraLight.ttf */; };
+		531D29CD91C23765C6D26441 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626129F18EAE1CBCF227BEFF /* ExpoModulesProvider.swift */; };
 		599BC38710824ED68489D881 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B031B61BA2FB416C8BEFFEEA /* Montserrat-BlackItalic.ttf */; };
 		617BB7DF91EF4CB9B4A7008C /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5903CDB2F11E4FD1B30DBD2E /* Montserrat-ExtraBold.ttf */; };
 		68844FE7A40D4CAD9AC73526 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74C2AC5C2AF24EA78086BEB6 /* Montserrat-Light.ttf */; };
@@ -52,6 +54,7 @@
 		07F6C45A389D45E9BA81F7C1 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		0B94663D7BC04821B14AF63C /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLight.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
 		0C01A17818064871BD5039F7 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		0DFFE605F2ED9A03305DA8A3 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* React_Native_Voyaga_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = React_Native_Voyaga_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = React_Native_Voyaga_App/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = React_Native_Voyaga_App/AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		5110A82B3AAE46F083A3743B /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		5903CDB2F11E4FD1B30DBD2E /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		5BD2E0ADFF094EF5A2D54053 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		626129F18EAE1CBCF227BEFF /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-React_Native_Voyaga_App/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		62D5C28D22C64EE6A0BE8BB9 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		74C2AC5C2AF24EA78086BEB6 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Light.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		7A9287BE668843A7AB7DCF3C /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
@@ -158,6 +162,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3364E87731CA8A95BE629A34 /* React_Native_Voyaga_App */ = {
+			isa = PBXGroup;
+			children = (
+				626129F18EAE1CBCF227BEFF /* ExpoModulesProvider.swift */,
+			);
+			name = React_Native_Voyaga_App;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +187,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D86B952FD770CD422F78B128 /* Pods */,
 				BB5CABFDD58E419FB383284F /* Resources */,
+				B4BE0FA93FB1EB7F78509D36 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -188,6 +201,15 @@
 				00E356EE1AD99517003FC87E /* React_Native_Voyaga_AppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B4BE0FA93FB1EB7F78509D36 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				3364E87731CA8A95BE629A34 /* React_Native_Voyaga_App */,
+				E61FC8078AD02EA5AE8119D5 /* React_Native_Voyaga_AppTests */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		BB5CABFDD58E419FB383284F /* Resources */ = {
@@ -240,6 +262,14 @@
 				C1263E0E62693C51DBD0EA33 /* Pods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E61FC8078AD02EA5AE8119D5 /* React_Native_Voyaga_AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DFFE605F2ED9A03305DA8A3 /* ExpoModulesProvider.swift */,
+			);
+			name = React_Native_Voyaga_AppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* React_Native_Voyaga_AppTests.m in Sources */,
+				1C1B279779ADB57F558E3930 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +555,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				531D29CD91C23765C6D26441 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,7 +580,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = React_Native_Voyaga_AppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,6 +591,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/React_Native_Voyaga_App.app/React_Native_Voyaga_App";
@@ -572,7 +605,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = React_Native_Voyaga_AppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,6 +616,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/React_Native_Voyaga_App.app/React_Native_Voyaga_App";
@@ -607,6 +641,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = React_Native_Voyaga_App;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -632,6 +667,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = React_Native_Voyaga_App;
 				SWIFT_VERSION = 5.0;
@@ -688,7 +724,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -746,7 +782,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
