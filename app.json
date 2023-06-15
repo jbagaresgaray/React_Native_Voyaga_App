@@ -6,6 +6,11 @@
     "assetBundlePatterns": ["**/*"],
     "orientation": "portrait",
     "jsEngine": "hermes",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "android": {
       "package": "com.voyaga.voyagaapp",
       "versionCode": 1

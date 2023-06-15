@@ -5,23 +5,11 @@
  * @format
  */
 
-const {getDefaultConfig} = require('metro-config');
-
-// module.exports = {
-//   transformer: {
-//     getTransformOptions: async () => ({
-//       transform: {
-//         experimentalImportSupport: false,
-//         inlineRequires: true,
-//       },
-//     }),
-//   },
-// };
-
+const {getDefaultConfig} = require('expo/metro-config');
 module.exports = (async () => {
   const {
     resolver: {sourceExts, assetExts},
-  } = await getDefaultConfig();
+  } = await getDefaultConfig(__dirname);
 
   return {
     transformer: {

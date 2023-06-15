@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* React_Native_Voyaga_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* React_Native_Voyaga_AppTests.m */; };
+		06848BC383FE41F9A1D24E96 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64CEE491234816B3D99C94 /* noop-file.swift */; };
 		0F68F0920F359EA6C15A4BC7 /* libPods-React_Native_Voyaga_App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4722BFD077B47247B8D5024 /* libPods-React_Native_Voyaga_App.a */; };
-		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		17D9894DE1E24B50BFE5552A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFC1B5A4EEC142D1A0144687 /* Montserrat-Regular.ttf */; };
@@ -18,9 +18,10 @@
 		4BC29C6A5B664D8EA931509D /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B94663D7BC04821B14AF63C /* Montserrat-ExtraLight.ttf */; };
 		531D29CD91C23765C6D26441 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626129F18EAE1CBCF227BEFF /* ExpoModulesProvider.swift */; };
 		599BC38710824ED68489D881 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B031B61BA2FB416C8BEFFEEA /* Montserrat-BlackItalic.ttf */; };
+		5A1018332A3AFB13009EDBF3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A1018322A3AFB13009EDBF3 /* AppDelegate.mm */; };
+		5ADCB7292A3B089D00B4A8FD /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADCB7282A3B089D00B4A8FD /* SplashScreen.storyboard */; };
 		617BB7DF91EF4CB9B4A7008C /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5903CDB2F11E4FD1B30DBD2E /* Montserrat-ExtraBold.ttf */; };
 		68844FE7A40D4CAD9AC73526 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74C2AC5C2AF24EA78086BEB6 /* Montserrat-Light.ttf */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		87308BF41A9C4564AFBE8B72 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5110A82B3AAE46F083A3743B /* Montserrat-ExtraBoldItalic.ttf */; };
 		95597C1EA0244DE09948B512 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E78CA4349BDF4F5D93A7DCB9 /* Montserrat-Black.ttf */; };
 		AB3EEF132DE34D30B5EF85F1 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99DEB485E5504E6B90F4D2A0 /* Montserrat-SemiBold.ttf */; };
@@ -34,13 +35,12 @@
 		FA0A76B12490088E6524F240 /* libPods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1773CC1B186FD7EAB7A2256B /* libPods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests.a */; };
 		FE800E7560C44283A5E23E88 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD02A4EE2DD447A1A29E22C1 /* Montserrat-Medium.ttf */; };
 		FF5DD967DBCA42E0B4D5DC08 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 273F09267B30416F9F8A5C1A /* Montserrat-ThinItalic.ttf */; };
-		06848BC383FE41F9A1D24E96 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64CEE491234816B3D99C94 /* noop-file.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = React_Native_Voyaga_App;
@@ -56,9 +56,8 @@
 		0B94663D7BC04821B14AF63C /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLight.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
 		0C01A17818064871BD5039F7 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		0DFFE605F2ED9A03305DA8A3 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* React_Native_Voyaga_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = React_Native_Voyaga_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Voyaga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voyaga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = React_Native_Voyaga_App/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = React_Native_Voyaga_App/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = React_Native_Voyaga_App/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = React_Native_Voyaga_App/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = React_Native_Voyaga_App/main.m; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		27ED022648264719A0FA39F3 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		345ADF3A9247728F9090FF03 /* Pods-React_Native_Voyaga_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Native_Voyaga_App.release.xcconfig"; path = "Target Support Files/Pods-React_Native_Voyaga_App/Pods-React_Native_Voyaga_App.release.xcconfig"; sourceTree = "<group>"; };
 		3C139DCABC42044CB38A8EAE /* Pods-React_Native_Voyaga_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Native_Voyaga_App.debug.xcconfig"; path = "Target Support Files/Pods-React_Native_Voyaga_App/Pods-React_Native_Voyaga_App.debug.xcconfig"; sourceTree = "<group>"; };
+		3C64CEE491234816B3D99C94 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "React_Native_Voyaga_App/noop-file.swift"; sourceTree = "<group>"; };
 		4004B03FD5CB466B816F8825 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		40373F6629064597A3C0B739 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		4180F74ED2ED4F56ABEE55EA /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
@@ -78,13 +78,15 @@
 		4E75F209956D4D50A0258D19 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		5110A82B3AAE46F083A3743B /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		5903CDB2F11E4FD1B30DBD2E /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5A1018322A3AFB13009EDBF3 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = React_Native_Voyaga_App/AppDelegate.mm; sourceTree = "<group>"; };
+		5A2FA6B7BAA54E8DACA914F2 /* React_Native_Voyaga_App-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "React_Native_Voyaga_App-Bridging-Header.h"; path = "React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h"; sourceTree = "<group>"; };
+		5ADCB7282A3B089D00B4A8FD /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = React_Native_Voyaga_App/SplashScreen.storyboard; sourceTree = "<group>"; };
 		5BD2E0ADFF094EF5A2D54053 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		626129F18EAE1CBCF227BEFF /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-React_Native_Voyaga_App/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		62D5C28D22C64EE6A0BE8BB9 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		74C2AC5C2AF24EA78086BEB6 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Light.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		7A9287BE668843A7AB7DCF3C /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		7B426BC9A52B4BE88F9BF4DC /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Thin.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = React_Native_Voyaga_App/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84018035747B4B2398959A0E /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		91E49BD3355C46248758261B /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-MediumItalic.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
 		99DEB485E5504E6B90F4D2A0 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -101,9 +103,6 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F5CA6FD30C225DF2F7CA0599 /* Pods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests/Pods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F885B6DC741740D49B108D88 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		3C64CEE491234816B3D99C94 /* noop-file.swift */ = {isa = PBXFileReference; name = "noop-file.swift"; path = "React_Native_Voyaga_App/noop-file.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
-		5A2FA6B7BAA54E8DACA914F2 /* React_Native_Voyaga_App-Bridging-Header.h */ = {isa = PBXFileReference; name = "React_Native_Voyaga_App-Bridging-Header.h"; path = "React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		543AA3BD90BC464C9E62B4AB /* SplashScreen.storyboard */ = {isa = PBXFileReference; name = "SplashScreen.storyboard"; path = "React_Native_Voyaga_App/SplashScreen.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,15 +145,14 @@
 		13B07FAE1A68108700A75B9A /* React_Native_Voyaga_App */ = {
 			isa = PBXGroup;
 			children = (
+				5ADCB7282A3B089D00B4A8FD /* SplashScreen.storyboard */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				5A1018322A3AFB13009EDBF3 /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				3C64CEE491234816B3D99C94 /* noop-file.swift */,
 				5A2FA6B7BAA54E8DACA914F2 /* React_Native_Voyaga_App-Bridging-Header.h */,
-				543AA3BD90BC464C9E62B4AB /* SplashScreen.storyboard */,
 			);
 			name = React_Native_Voyaga_App;
 			sourceTree = "<group>";
@@ -184,7 +182,7 @@
 			name = Libraries;
 			sourceTree = "<group>";
 		};
-		83CBB9F61A601CBA00E9B192 /* PBXGroup */ = {
+		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
 				13B07FAE1A68108700A75B9A /* React_Native_Voyaga_App */,
@@ -204,7 +202,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* React_Native_Voyaga_App.app */,
+				13B07F961A680F5B00A75B9A /* Voyaga.app */,
 				00E356EE1AD99517003FC87E /* React_Native_Voyaga_AppTests.xctest */,
 			);
 			name = Products;
@@ -322,20 +320,20 @@
 			);
 			name = React_Native_Voyaga_App;
 			productName = React_Native_Voyaga_App;
-			productReference = 13B07F961A680F5B00A75B9A /* React_Native_Voyaga_App.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Voyaga.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		83CBB9F71A601CBA00E9B192 = {
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 13B07F861A680F5B00A75B9A /* React_Native_Voyaga_App */;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
@@ -350,7 +348,7 @@
 				en,
 				Base,
 			);
-			mainGroup = 83CBB9F61A601CBA00E9B192 /* PBXGroup */;
+			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -373,7 +371,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				95597C1EA0244DE09948B512 /* Montserrat-Black.ttf in Resources */,
 				599BC38710824ED68489D881 /* Montserrat-BlackItalic.ttf in Resources */,
@@ -387,14 +384,13 @@
 				68844FE7A40D4CAD9AC73526 /* Montserrat-Light.ttf in Resources */,
 				B980D97F3C754081AF3A13BB /* Montserrat-LightItalic.ttf in Resources */,
 				FE800E7560C44283A5E23E88 /* Montserrat-Medium.ttf in Resources */,
+				5ADCB7292A3B089D00B4A8FD /* SplashScreen.storyboard in Resources */,
 				CA10FD2E6F6F46FE88A3054E /* Montserrat-MediumItalic.ttf in Resources */,
 				17D9894DE1E24B50BFE5552A /* Montserrat-Regular.ttf in Resources */,
 				AB3EEF132DE34D30B5EF85F1 /* Montserrat-SemiBold.ttf in Resources */,
 				E5F7688564C44E69AD7A2DCB /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				E3C5A0CA39354A1CAA1F84DB /* Montserrat-Thin.ttf in Resources */,
 				FF5DD967DBCA42E0B4D5DC08 /* Montserrat-ThinItalic.ttf in Resources */,
-				14911E3CD0804ACC908E59E3 /* React_Native_Voyaga_App-Bridging-Header.h in Resources */,
-				E4D730A21F964442A6CF35B7 /* SplashScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,9 +558,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				531D29CD91C23765C6D26441 /* ExpoModulesProvider.swift in Sources */,
+				5A1018332A3AFB13009EDBF3 /* AppDelegate.mm in Sources */,
 				06848BC383FE41F9A1D24E96 /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,9 +600,9 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/React_Native_Voyaga_App.app/React_Native_Voyaga_App";
-				TARGETED_DEVICE_FAMILY = "1";
-				SWIFT_OBJC_BRIDGING_HEADER = React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h;
 			};
 			name = Debug;
 		};
@@ -631,9 +627,9 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/React_Native_Voyaga_App.app/React_Native_Voyaga_App";
-				TARGETED_DEVICE_FAMILY = "1";
-				SWIFT_OBJC_BRIDGING_HEADER = React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h;
 			};
 			name = Release;
 		};
@@ -643,9 +639,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = React_Native_Voyaga_App/React_Native_Voyaga_App.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N2VSZMWJ3J;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = React_Native_Voyaga_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -656,14 +655,13 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.voyaga.voyagaapp";
-				PRODUCT_NAME = "Voyaga";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voyaga.voyagaapp;
+				PRODUCT_NAME = Voyaga;
+				SWIFT_OBJC_BRIDGING_HEADER = "React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
-				TARGETED_DEVICE_FAMILY = "1";
-				SWIFT_OBJC_BRIDGING_HEADER = React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h;
-				CODE_SIGN_ENTITLEMENTS = React_Native_Voyaga_App/React_Native_Voyaga_App.entitlements;
 			};
 			name = Debug;
 		};
@@ -673,8 +671,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = React_Native_Voyaga_App/React_Native_Voyaga_App.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N2VSZMWJ3J;
 				INFOPLIST_FILE = React_Native_Voyaga_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -685,13 +686,12 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.voyaga.voyagaapp";
-				PRODUCT_NAME = "Voyaga";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voyaga.voyagaapp;
+				PRODUCT_NAME = Voyaga;
+				SWIFT_OBJC_BRIDGING_HEADER = "React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
-				TARGETED_DEVICE_FAMILY = "1";
-				SWIFT_OBJC_BRIDGING_HEADER = React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h;
-				CODE_SIGN_ENTITLEMENTS = React_Native_Voyaga_App/React_Native_Voyaga_App.entitlements;
 			};
 			name = Release;
 		};
@@ -700,7 +700,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -728,7 +728,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -744,18 +744,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -765,7 +766,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -793,7 +794,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -802,17 +803,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -850,5 +852,5 @@
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 83CBB9F71A601CBA00E9B192;
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }
