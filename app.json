@@ -1,7 +1,21 @@
 {
-  "name": "React_Native_Voyaga_App",
-  "displayName": "React_Native_Voyaga_App",
   "expo": {
-    "name": "React_Native_Voyaga_App"
+    "name": "Voyaga",
+    "slug": "voyaga-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "orientation": "portrait",
+    "jsEngine": "hermes",
+    "android": {
+      "package": "com.voyaga.voyagaapp",
+      "versionCode": 1
+    },
+    "ios": {
+      "bundleIdentifier": "com.voyaga.voyagaapp",
+      "buildNumber": "1"
+    },
+    "runtimeVersion": {
+      "policy": "nativeVersion"
+    }
   }
 }

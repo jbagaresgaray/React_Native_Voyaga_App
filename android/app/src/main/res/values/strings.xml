@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">React_Native_Voyaga_App</string>
+  <string name="app_name">Voyaga</string>
+  <string name="expo_runtime_version">1.0.0(1)</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.react_native_voyaga_app;
+package com.voyaga.voyagaapp;
 import expo.modules.ReactActivityDelegateWrapper;
 import com.facebook.react.ReactActivityDelegate;
 

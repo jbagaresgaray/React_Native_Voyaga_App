@@ -34,6 +34,7 @@
 		FA0A76B12490088E6524F240 /* libPods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1773CC1B186FD7EAB7A2256B /* libPods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests.a */; };
 		FE800E7560C44283A5E23E88 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD02A4EE2DD447A1A29E22C1 /* Montserrat-Medium.ttf */; };
 		FF5DD967DBCA42E0B4D5DC08 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 273F09267B30416F9F8A5C1A /* Montserrat-ThinItalic.ttf */; };
+		06848BC383FE41F9A1D24E96 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64CEE491234816B3D99C94 /* noop-file.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,9 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F5CA6FD30C225DF2F7CA0599 /* Pods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests/Pods-React_Native_Voyaga_App-React_Native_Voyaga_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F885B6DC741740D49B108D88 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		3C64CEE491234816B3D99C94 /* noop-file.swift */ = {isa = PBXFileReference; name = "noop-file.swift"; path = "React_Native_Voyaga_App/noop-file.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		5A2FA6B7BAA54E8DACA914F2 /* React_Native_Voyaga_App-Bridging-Header.h */ = {isa = PBXFileReference; name = "React_Native_Voyaga_App-Bridging-Header.h"; path = "React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		543AA3BD90BC464C9E62B4AB /* SplashScreen.storyboard */ = {isa = PBXFileReference; name = "SplashScreen.storyboard"; path = "React_Native_Voyaga_App/SplashScreen.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				3C64CEE491234816B3D99C94 /* noop-file.swift */,
+				5A2FA6B7BAA54E8DACA914F2 /* React_Native_Voyaga_App-Bridging-Header.h */,
+				543AA3BD90BC464C9E62B4AB /* SplashScreen.storyboard */,
 			);
 			name = React_Native_Voyaga_App;
 			sourceTree = "<group>";
@@ -386,6 +393,8 @@
 				E5F7688564C44E69AD7A2DCB /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				E3C5A0CA39354A1CAA1F84DB /* Montserrat-Thin.ttf in Resources */,
 				FF5DD967DBCA42E0B4D5DC08 /* Montserrat-ThinItalic.ttf in Resources */,
+				14911E3CD0804ACC908E59E3 /* React_Native_Voyaga_App-Bridging-Header.h in Resources */,
+				E4D730A21F964442A6CF35B7 /* SplashScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +565,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				531D29CD91C23765C6D26441 /* ExpoModulesProvider.swift in Sources */,
+				06848BC383FE41F9A1D24E96 /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +605,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/React_Native_Voyaga_App.app/React_Native_Voyaga_App";
+				TARGETED_DEVICE_FAMILY = "1";
+				SWIFT_OBJC_BRIDGING_HEADER = React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h;
 			};
 			name = Debug;
 		};
@@ -620,6 +632,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/React_Native_Voyaga_App.app/React_Native_Voyaga_App";
+				TARGETED_DEVICE_FAMILY = "1";
+				SWIFT_OBJC_BRIDGING_HEADER = React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h;
 			};
 			name = Release;
 		};
@@ -642,11 +656,14 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = React_Native_Voyaga_App;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.voyaga.voyagaapp";
+				PRODUCT_NAME = "Voyaga";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+				TARGETED_DEVICE_FAMILY = "1";
+				SWIFT_OBJC_BRIDGING_HEADER = React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h;
+				CODE_SIGN_ENTITLEMENTS = React_Native_Voyaga_App/React_Native_Voyaga_App.entitlements;
 			};
 			name = Debug;
 		};
@@ -668,10 +685,13 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = React_Native_Voyaga_App;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.voyaga.voyagaapp";
+				PRODUCT_NAME = "Voyaga";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+				TARGETED_DEVICE_FAMILY = "1";
+				SWIFT_OBJC_BRIDGING_HEADER = React_Native_Voyaga_App/React_Native_Voyaga_App-Bridging-Header.h;
+				CODE_SIGN_ENTITLEMENTS = React_Native_Voyaga_App/React_Native_Voyaga_App.entitlements;
 			};
 			name = Release;
 		};
