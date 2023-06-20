@@ -1,0 +1,33 @@
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path
+            d="M14,2 C20.624,2 26,7.376 26,14 C26,20.624 20.624,26 14,26 C7.376,26 2,20.624 2,14 C2,7.376 7.376,2 14,2 Z M18.2801109,8.96167372 L15.7396191,11.3307207 L9.98419464,9.78913888 L9.06037944,10.6506105 L13.6610349,13.2690318 L11.1205431,15.6380787 L9.56621007,15.3603672 L8.87334867,16.0064709 L10.8428316,17.1924117 L11.8884993,19.2398241 L12.5813607,18.5937204 L12.4127505,17.0238015 L14.9532423,14.6547546 L17.2443598,19.4268549 L18.168175,18.5653833 L17.0318265,12.7164435 L19.5723183,10.3473965 C19.9557016,9.9898858 19.9765867,9.39181472 19.619076,9.00843141 C19.2615653,8.6250481 18.6634942,8.604163 18.2801109,8.96167372 Z"
+            id="path-pt_40kpe0m-1"></path>
+        <filter x="-70.8%" y="-54.2%" width="241.7%" height="241.7%" filterUnits="objectBoundingBox"
+            id="filter-pt_40kpe0m-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1">
+            </feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Your-World" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="All-Destination-Copy" transform="translate(-295, -1057)">
+            <g id="Card" transform="translate(20, 665)">
+                <g id="options" transform="translate(0, 378)">
+                    <g id="going" transform="translate(270, 14)">
+                        <g id="check_circle_outline-24px-(1)" transform="translate(5, 0)">
+                            <path d="M0,0 L24,0 L24,24 L0,24 L0,0 Z M0,0 L24,0 L24,24 L0,24 L0,0 Z" id="Shape"></path>
+                            <g id="Shape">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-pt_40kpe0m-2)"
+                                    xlink:href="#path-pt_40kpe0m-1"></use>
+                                <use fill="#C3C3C3" fill-rule="evenodd" xlink:href="#path-pt_40kpe0m-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

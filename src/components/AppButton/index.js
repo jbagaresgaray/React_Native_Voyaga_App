@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {Button} from 'react-native-elements';
-import LinearGradient from 'react-native-linear-gradient';
+import {LinearGradient} from 'expo-linear-gradient';
 import PropTypes from 'prop-types';
 import COLORS from '../../constants/Colors';
 import {FONT_SEMI_BOLD} from '../../constants/Typography';

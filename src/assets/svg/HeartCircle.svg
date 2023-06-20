@@ -1,0 +1,32 @@
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path
+            d="M12,0 C18.624,0 24,5.376 24,12 C24,18.624 18.624,24 12,24 C5.376,24 0,18.624 0,12 C0,5.376 5.376,0 12,0 Z M14.7,7 C13.656,7 12.654,7.48555858 12,8.25286104 C11.346,7.48555858 10.344,7 9.3,7 C7.452,7 6,8.4506812 6,10.2970027 C6,12.5629428 8.04,14.4092643 11.13,17.2147139 L12,18 L12.87,17.2087193 C15.96,14.4092643 18,12.5629428 18,10.2970027 C18,8.4506812 16.548,7 14.7,7 Z"
+            id="path-hplukpn1n2-1"></path>
+        <filter x="-70.8%" y="-54.2%" width="241.7%" height="241.7%" filterUnits="objectBoundingBox"
+            id="filter-hplukpn1n2-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1">
+            </feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Wishlist" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Destinations-you-want-to-go" transform="translate(-194, -596)">
+            <g id="Card" transform="translate(19, 202)">
+                <g id="Group" transform="translate(0, 0)">
+                    <g id="options" transform="translate(0, 378)">
+                        <g id="want-to-go" transform="translate(152, 16)">
+                            <g id="Shape" transform="translate(23, 0)">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-hplukpn1n2-2)"
+                                    xlink:href="#path-hplukpn1n2-1"></use>
+                                <use fill="#C3C3C3" fill-rule="evenodd" xlink:href="#path-hplukpn1n2-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path
+            d="M14,2 C20.624,2 26,7.376 26,14 C26,20.624 20.624,26 14,26 C7.376,26 2,20.624 2,14 C2,7.376 7.376,2 14,2 Z M18.6153846,10 L11.6923077,16.4615385 L9.38461538,14.1538462 L8,15.5384615 L11.6923077,19.2307692 L20,11.3846154 L18.6153846,10 Z"
+            id="path-vxc1uyr2gi-1"></path>
+        <filter x="-70.8%" y="-54.2%" width="241.7%" height="241.7%" filterUnits="objectBoundingBox"
+            id="filter-vxc1uyr2gi-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1">
+            </feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Wishlist" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Destinations-you-want-to-go" transform="translate(-89, -594)">
+            <g id="Card" transform="translate(19, 202)">
+                <g id="Group" transform="translate(0, 0)">
+                    <g id="options" transform="translate(0, 378)">
+                        <g id="been" transform="translate(66, 14)">
+                            <g id="check_circle_outline-24px-(1)" transform="translate(4, 0)">
+                                <path d="M0,0 L24,0 L24,24 L0,24 L0,0 Z M0,0 L24,0 L24,24 L0,24 L0,0 Z" id="Shape">
+                                </path>
+                                <g id="Shape">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-vxc1uyr2gi-2)"
+                                        xlink:href="#path-vxc1uyr2gi-1"></use>
+                                    <use fill="#C3C3C3" fill-rule="evenodd" xlink:href="#path-vxc1uyr2gi-1"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

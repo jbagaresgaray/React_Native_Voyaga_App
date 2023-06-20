@@ -42,6 +42,7 @@ const COLORS = {
   colorLightShade: '#d7d8da',
   colorLightTint: '#f5f6f9',
   colorLightGrey: '#ADB3BC',
+  colorBadge: '#1E1E1E',
 };
 
 export default COLORS;

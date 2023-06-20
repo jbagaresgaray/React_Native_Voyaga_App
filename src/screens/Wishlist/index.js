@@ -1,13 +1,19 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {useLayoutEffect} from 'react';
-import {StatusBar, SafeAreaView, StyleSheet, View} from 'react-native';
+import {SafeAreaView, StyleSheet, View, Platform} from 'react-native';
 
 import AppHeaderText from '../../components/AppHeaderText';
 
 import COLORS from '../../constants/Colors';
+import {FlashList} from '@shopify/flash-list';
+import AppTravelCard from '../../components/AppTravelCard';
+import AppTravelNewsCard from '../../components/AppTravelNewsCard';
 
 const WishlistScreen = () => {
   const navigation = useNavigation();
+  const fakeData = Array.from({
+    length: 10,
+  });
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -17,12 +23,23 @@ const WishlistScreen = () => {
     });
   }, [navigation]);
 
+  const renderItem = ({item, index}) => {
+    return <AppTravelNewsCard />;
+  };
+
   return (
     <SafeAreaView style={styles.SafeAreaView}>
-      <StatusBar barStyle="default" />
-      <View style={styles.Content}>
-        <AppHeaderText subheader="Wishlist" />
-      </View>
+      <FlashList
+        data={fakeData}
+        contentContainerStyle={styles.FlashListContainer}
+        ListHeaderComponent={
+          <View style={styles.Content}>
+            <AppHeaderText subheader="Wishlist" />
+          </View>
+        }
+        renderItem={renderItem}
+        estimatedItemSize={500}
+      />
     </SafeAreaView>
   );
 };
@@ -36,6 +53,9 @@ const styles = StyleSheet.create({
     marginTop: Platform.OS === 'ios' ? 56 : 56,
   },
   Content: {
-    marginHorizontal: 20,
+    marginBottom: 20,
+  },
+  FlashListContainer: {
+    paddingHorizontal: 20,
   },
 });

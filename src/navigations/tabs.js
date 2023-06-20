@@ -15,6 +15,7 @@ export default function TabsNavigator() {
     <Tab.Navigator
       screenOptions={{
         tabBarShowLabel: false,
+        headerShown: false,
       }}
       tabBar={props => <AppTabBar {...props} />}>
       <Tab.Screen name="YourWorld" component={YourWorldNavigator} />
