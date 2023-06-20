@@ -1,13 +1,6 @@
-import {useNavigation} from '@react-navigation/core';
-import {useHeaderHeight} from '@react-navigation/stack';
+import {useNavigation} from '@react-navigation/native';
 import React, {useLayoutEffect, useState} from 'react';
-import {
-  View,
-  Text,
-  SafeAreaView,
-  StyleSheet,
-  StatusBar,
-} from 'react-native';
+import {View, Text, SafeAreaView, StyleSheet, StatusBar} from 'react-native';
 
 import AppHeaderText from '../../components/AppHeaderText';
 import AppInput from '../../components/AppInput';
@@ -17,11 +10,19 @@ import {ROUTES} from '../../constants/routes';
 import COLORS from '../../constants/Colors';
 import {FONT_REGULAR} from '../../constants/Typography';
 import AppCheckbox from '../../components/AppCheckbox';
-import { ScrollView } from 'react-native-gesture-handler';
+import {ScrollView} from 'react-native-gesture-handler';
+import {getDefaultHeaderHeight} from '@react-navigation/elements';
+import {
+  useSafeAreaFrame,
+  useSafeAreaInsets,
+} from 'react-native-safe-area-context';
 
 const RegisterScreen = () => {
   const navigation = useNavigation();
-  const headerHeight = useHeaderHeight();
+  const frame = useSafeAreaFrame();
+  const insets = useSafeAreaInsets();
+  const headerHeight = getDefaultHeaderHeight(frame, false, insets.top);
+
   const [isAgree, setIsAgree] = useState(false);
 
   useLayoutEffect(() => {

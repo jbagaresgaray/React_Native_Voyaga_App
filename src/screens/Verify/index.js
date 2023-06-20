@@ -1,20 +1,27 @@
-import {useNavigation} from '@react-navigation/core';
-import {useHeaderHeight} from '@react-navigation/stack';
+import {useNavigation} from '@react-navigation/native';
 import React, {useCallback, useLayoutEffect, useRef, useState} from 'react';
 import {View, Text, SafeAreaView, StyleSheet, StatusBar} from 'react-native';
-import InputCode, {InputCodeHandler} from 'react-native-input-code';
+import InputCode from 'react-native-input-code';
 
 import AppHeaderText from '../../components/AppHeaderText';
-import AppInput from '../../components/AppInput';
 import AppLink from '../../components/AppLink';
 import AppButton from '../../components/AppButton';
 import COLORS from '../../constants/Colors';
 import {FONT_BOLD, FONT_REGULAR} from '../../constants/Typography';
 import {ROUTES} from '../../constants/routes';
+import {
+  useSafeAreaFrame,
+  useSafeAreaInsets,
+} from 'react-native-safe-area-context';
+import {getDefaultHeaderHeight} from '@react-navigation/elements';
 
 const VerifyScreen = () => {
   const navigation = useNavigation();
-  const headerHeight = useHeaderHeight();
+  const frame = useSafeAreaFrame();
+  const insets = useSafeAreaInsets();
+
+  const headerHeight = getDefaultHeaderHeight(frame, false, insets.top);
+
   const inputCode = useRef(null);
   const [code, setCode] = useState('');
 

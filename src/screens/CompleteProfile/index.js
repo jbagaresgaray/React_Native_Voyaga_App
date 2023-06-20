@@ -1,5 +1,4 @@
-import {useNavigation} from '@react-navigation/core';
-import {useHeaderHeight} from '@react-navigation/stack';
+import {useNavigation} from '@react-navigation/native';
 import React, {useLayoutEffect} from 'react';
 import {
   View,
@@ -16,10 +15,17 @@ import AppInput from '../../components/AppInput';
 import COLORS from '../../constants/Colors';
 import {ROUTES} from '../../constants/routes';
 import AppUploadPhoto from '../../components/AppUploadPhoto';
+import {
+  useSafeAreaFrame,
+  useSafeAreaInsets,
+} from 'react-native-safe-area-context';
+import {getDefaultHeaderHeight} from '@react-navigation/elements';
 
 const CompleteProfileScreen = () => {
   const navigation = useNavigation();
-  const headerHeight = useHeaderHeight();
+  const frame = useSafeAreaFrame();
+  const insets = useSafeAreaInsets();
+  const headerHeight = getDefaultHeaderHeight(frame, false, insets.top);
 
   useLayoutEffect(() => {
     navigation.setOptions({

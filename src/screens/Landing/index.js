@@ -19,7 +19,7 @@ import GoogleSVG from '../../assets/svg/Google.svg';
 import InstagramSVG from '../../assets/svg/Instagram.svg';
 import backgroundImg from '../../assets/img/landing.png';
 import {FONT_BOLD, FONT_LIGHT, FONT_REGULAR} from '../../constants/Typography';
-import { ROUTES } from '../../constants/routes';
+import {ROUTES} from '../../constants/routes';
 
 const {width, height} = Dimensions.get('window');
 
@@ -28,6 +28,10 @@ const LandingScreen = () => {
 
   const onRegister = () => {
     navigation.navigate(ROUTES.REGISTER);
+  };
+
+  const onLogin = () => {
+    navigation.navigate(ROUTES.LOGIN);
   };
 
   return (
@@ -48,11 +52,7 @@ const LandingScreen = () => {
         </View>
         <View style={styles.FooterView}>
           <View style={styles.FooterTabView}>
-            <AppButton
-              title="Sign In"
-              variant="secondary"
-              onPress={() => navigation.navigate('Login')}
-            />
+            <AppButton title="Sign In" variant="secondary" onPress={onLogin} />
             <View style={styles.BottomSeparatorView}>
               <View style={styles.BottomViewSeparator} />
               <Text style={styles.BottomSeparatorText}>OR</Text>
@@ -74,9 +74,7 @@ const LandingScreen = () => {
             <View style={styles.BottomSeparatorView}>
               <Text style={styles.BottomText}>
                 Don’t have an account?{' '}
-                <Text
-                  style={styles.BottomText2}
-                  onPress={onRegister}>
+                <Text style={styles.BottomText2} onPress={onRegister}>
                   Create Account
                 </Text>
               </Text>

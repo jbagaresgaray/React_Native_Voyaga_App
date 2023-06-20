@@ -1,14 +1,7 @@
 import React, {useLayoutEffect} from 'react';
-import {
-  View,
-  Text,
-  SafeAreaView,
-  StyleSheet,
-  StatusBar,
-  TouchableOpacity,
-} from 'react-native';
-import {useNavigation} from '@react-navigation/core';
-import {useHeaderHeight} from '@react-navigation/stack';
+import {View, Text, SafeAreaView, StyleSheet, StatusBar} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import {getDefaultHeaderHeight} from '@react-navigation/elements';
 
 import AppHeaderText from '../../components/AppHeaderText';
 import AppInput from '../../components/AppInput';
@@ -19,10 +12,17 @@ import COLORS from '../../constants/Colors';
 
 import {FONT_MEDIUM, FONT_REGULAR} from '../../constants/Typography';
 import {ROUTES} from '../../constants/routes';
+import {
+  useSafeAreaFrame,
+  useSafeAreaInsets,
+} from 'react-native-safe-area-context';
 
 const LoginScreen = () => {
   const navigation = useNavigation();
-  const headerHeight = useHeaderHeight();
+  const frame = useSafeAreaFrame();
+  const insets = useSafeAreaInsets();
+
+  const headerHeight = getDefaultHeaderHeight(frame, false, insets.top);
 
   useLayoutEffect(() => {
     navigation.setOptions({

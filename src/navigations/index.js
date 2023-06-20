@@ -35,10 +35,14 @@ const navigationOptions = {
 };
 
 const RootNavigators = () => {
-  console.log('RootNavigators:');
   return (
     <RootStack.Navigator
-      screenOptions={navigationOptions}
+      screenOptions={{
+        ...navigationOptions,
+        headerLeftContainerStyle: {
+          paddingLeft: 10,
+        },
+      }}
       initialRouteName={ROUTES.ONBOARDING}>
       <RootStack.Screen
         name={ROUTES.ONBOARDING}

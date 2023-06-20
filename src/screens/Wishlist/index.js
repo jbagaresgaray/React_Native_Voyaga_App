@@ -1,4 +1,4 @@
-import {useNavigation} from '@react-navigation/core';
+import {useNavigation} from '@react-navigation/native';
 import React, {useLayoutEffect} from 'react';
 import {StatusBar, SafeAreaView, StyleSheet, View} from 'react-native';
 

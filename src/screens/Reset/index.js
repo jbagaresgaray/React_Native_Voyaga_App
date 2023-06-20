@@ -1,15 +1,21 @@
-import {useNavigation} from '@react-navigation/core';
-import {useHeaderHeight} from '@react-navigation/stack';
+import {useNavigation} from '@react-navigation/native';
 import React, {useLayoutEffect} from 'react';
 import {View, Text, SafeAreaView, StyleSheet, StatusBar} from 'react-native';
 
 import AppHeaderText from '../../components/AppHeaderText';
 import AppInput from '../../components/AppInput';
 import AppButton from '../../components/AppButton';
+import {
+  useSafeAreaFrame,
+  useSafeAreaInsets,
+} from 'react-native-safe-area-context';
+import {getDefaultHeaderHeight} from '@react-navigation/elements';
 
 const ResetScreen = () => {
   const navigation = useNavigation();
-  const headerHeight = useHeaderHeight();
+  const frame = useSafeAreaFrame();
+  const insets = useSafeAreaInsets();
+  const headerHeight = getDefaultHeaderHeight(frame, false, insets.top);
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -34,9 +40,7 @@ const ResetScreen = () => {
           <AppInput placeholder="Confirm Password" secureTextEntry />
         </View>
         <View style={styles.FooterView}>
-          <AppButton
-            title="Submit"
-          />
+          <AppButton title="Submit" />
           <AppButton
             title="Cancel"
             type="clear"

@@ -1,5 +1,4 @@
-import {useNavigation} from '@react-navigation/core';
-import {useHeaderHeight} from '@react-navigation/stack';
+import {useNavigation} from '@react-navigation/native';
 import React, {useLayoutEffect} from 'react';
 import {View, Text, SafeAreaView, StyleSheet, StatusBar} from 'react-native';
 
@@ -9,10 +8,17 @@ import COLORS from '../../constants/Colors';
 import {ROUTES} from '../../constants/routes';
 
 import AllowNotificationSVG from '../../assets/svg/AllowNotifications.svg';
+import {
+  useSafeAreaFrame,
+  useSafeAreaInsets,
+} from 'react-native-safe-area-context';
+import {getDefaultHeaderHeight} from '@react-navigation/elements';
 
 const AllowNotificationScreen = () => {
   const navigation = useNavigation();
-  const headerHeight = useHeaderHeight();
+  const frame = useSafeAreaFrame();
+  const insets = useSafeAreaInsets();
+  const headerHeight = getDefaultHeaderHeight(frame, false, insets.top);
 
   useLayoutEffect(() => {
     navigation.setOptions({
