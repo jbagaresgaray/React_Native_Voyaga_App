@@ -13,8 +13,8 @@ const Tab = createBottomTabNavigator();
 export default function TabsNavigator() {
   return (
     <Tab.Navigator
-      tabBarOptions={{
-        showLabel: false,
+      screenOptions={{
+        tabBarShowLabel: false,
       }}
       tabBar={props => <AppTabBar {...props} />}>
       <Tab.Screen name="YourWorld" component={YourWorldNavigator} />
