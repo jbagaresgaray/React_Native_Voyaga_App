@@ -11,9 +11,12 @@ import COLORS from '../../constants/Colors';
 import {FONT_MEDIUM, FONT_SEMI_BOLD} from '../../constants/Typography';
 import {Icon} from 'react-native-elements';
 
-const AppTravelNewsCard = () => {
+const AppTravelNewsCard = ({onPress, onCTAPress}) => {
   return (
-    <View style={styles.MainContainer}>
+    <TouchableOpacity
+      activeOpacity={0.9}
+      style={styles.MainContainer}
+      onPress={onPress}>
       <LinearGradient
         colors={['rgba(0,0,0,0.6)', 'rgba(37,37,37,0)', 'rgba(170,170,170,0)']}
         style={styles.LinearGradient}
@@ -25,12 +28,15 @@ const AppTravelNewsCard = () => {
       <View style={styles.Container}>
         <Text style={styles.SubTitleText}>10 DESTINATIONS</Text>
         <Text style={styles.TitleText}>Destinations you want to go</Text>
-        <TouchableOpacity activeOpacity={0.9} style={styles.CTAButton}>
+        <TouchableOpacity
+          onPress={onCTAPress}
+          activeOpacity={0.9}
+          style={styles.CTAButton}>
           <Text style={styles.CTAButtonText}>See all</Text>
           <Icon name="chevron-right" size={16} color={COLORS.colorPink} />
         </TouchableOpacity>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

@@ -1,21 +1,43 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Pressable} from 'react-native';
 import COLORS from '../../constants/Colors';
 import {FONT_LIGHT, FONT_SEMI_BOLD} from '../../constants/Typography';
+import {Icon} from 'react-native-elements';
+import {useNavigation} from '@react-navigation/native';
 
-const index = ({header, subheader, message}) => {
+const AppHeaderText = ({header, subheader, message, hasBack}) => {
+  const navigation = useNavigation();
+
   return (
-    <View style={styles.Container}>
+    <View style={styles.MainContainer}>
+      {hasBack && (
+        <Pressable onPress={() => navigation.goBack()}>
+          <Icon
+            name="chevron-left"
+            size={36}
+            color={COLORS.colorBackButton}
+            style={{
+              left: -10,
+            }}
+          />
+        </Pressable>
+      )}
       {header && <Text style={styles.HeaderText}>{header}</Text>}
-      {subheader && <Text style={styles.SubHeaderText}>{subheader}</Text>}
-      {message && <Text style={styles.MessageText}>{message}</Text>}
+      <View style={styles.Container}>
+        {subheader && <Text style={styles.SubHeaderText}>{subheader}</Text>}
+        {message && <Text style={styles.MessageText}>{message}</Text>}
+      </View>
     </View>
   );
 };
 
-export default index;
+export default AppHeaderText;
 
 const styles = StyleSheet.create({
+  MainContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   Container: {
     alignItems: 'flex-start',
   },

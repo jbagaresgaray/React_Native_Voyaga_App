@@ -1,19 +1,25 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {useLayoutEffect} from 'react';
-import {
-  StatusBar,
-  SafeAreaView,
-  StyleSheet,
-  View,
-  Platform,
-} from 'react-native';
+import {SafeAreaView, StyleSheet, View} from 'react-native';
 
 import AppHeaderText from '../../components/AppHeaderText';
 
 import COLORS from '../../constants/Colors';
+import {FAKE_DATA} from '../../constants';
+import {FlashList} from '@shopify/flash-list';
+import AppTravelNewsCard from '../../components/AppTravelNewsCard';
+import {hasNotch} from 'react-native-device-info';
+import {
+  useSafeAreaFrame,
+  useSafeAreaInsets,
+} from 'react-native-safe-area-context';
+import {getDefaultHeaderHeight} from '@react-navigation/elements';
 
 const YourWorldScreen = () => {
   const navigation = useNavigation();
+  const frame = useSafeAreaFrame();
+  const insets = useSafeAreaInsets();
+  const headerHeight = getDefaultHeaderHeight(frame, false, insets.top);
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -23,12 +29,31 @@ const YourWorldScreen = () => {
     });
   }, [navigation]);
 
+  const renderItem = ({item, index}) => {
+    return (
+      <AppTravelNewsCard
+        onPress={() => navigation.navigate('AllDestinations')}
+      />
+    );
+  };
+
   return (
     <SafeAreaView style={styles.SafeAreaView}>
-      <StatusBar barStyle="default" />
-      <View style={styles.Content}>
-        <AppHeaderText subheader="Your World" />
-      </View>
+      <FlashList
+        data={FAKE_DATA}
+        contentContainerStyle={styles.FlashListContainer}
+        ListHeaderComponent={
+          <View
+            style={{
+              ...styles.Content,
+              marginTop: hasNotch() ? 10 : headerHeight,
+            }}>
+            <AppHeaderText subheader="Your World" />
+          </View>
+        }
+        renderItem={renderItem}
+        estimatedItemSize={500}
+      />
     </SafeAreaView>
   );
 };
@@ -39,9 +64,11 @@ const styles = StyleSheet.create({
   SafeAreaView: {
     flex: 1,
     backgroundColor: COLORS.colorContent,
-    marginTop: Platform.OS === 'ios' ? 56 : 56,
   },
   Content: {
-    marginHorizontal: 20,
+    marginBottom: 20,
+  },
+  FlashListContainer: {
+    paddingHorizontal: 20,
   },
 });

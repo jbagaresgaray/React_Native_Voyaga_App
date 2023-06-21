@@ -1,39 +1,53 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {useLayoutEffect} from 'react';
-import {SafeAreaView, StyleSheet, View, Platform} from 'react-native';
+import {SafeAreaView, StyleSheet, View} from 'react-native';
 
 import AppHeaderText from '../../components/AppHeaderText';
 
 import COLORS from '../../constants/Colors';
 import {FlashList} from '@shopify/flash-list';
-import AppTravelCard from '../../components/AppTravelCard';
 import AppTravelNewsCard from '../../components/AppTravelNewsCard';
+import {FAKE_DATA} from '../../constants';
+import {
+  useSafeAreaFrame,
+  useSafeAreaInsets,
+} from 'react-native-safe-area-context';
+import {getDefaultHeaderHeight} from '@react-navigation/elements';
+import {hasNotch} from 'react-native-device-info';
 
 const WishlistScreen = () => {
   const navigation = useNavigation();
-  const fakeData = Array.from({
-    length: 10,
-  });
+  const frame = useSafeAreaFrame();
+  const insets = useSafeAreaInsets();
+  const headerHeight = getDefaultHeaderHeight(frame, false, insets.top);
 
   useLayoutEffect(() => {
     navigation.setOptions({
       headerTransparent: true,
       headerTitle: () => undefined,
-      headerLeft: () => null,
+      // headerLeft: () => null,
     });
   }, [navigation]);
 
   const renderItem = ({item, index}) => {
-    return <AppTravelNewsCard />;
+    return (
+      <AppTravelNewsCard
+        onPress={() => navigation.navigate('AllDestinations')}
+      />
+    );
   };
 
   return (
     <SafeAreaView style={styles.SafeAreaView}>
       <FlashList
-        data={fakeData}
+        data={FAKE_DATA}
         contentContainerStyle={styles.FlashListContainer}
         ListHeaderComponent={
-          <View style={styles.Content}>
+          <View
+            style={{
+              ...styles.Content,
+              marginTop: hasNotch() ? 10 : headerHeight,
+            }}>
             <AppHeaderText subheader="Wishlist" />
           </View>
         }
@@ -50,7 +64,6 @@ const styles = StyleSheet.create({
   SafeAreaView: {
     flex: 1,
     backgroundColor: COLORS.colorContent,
-    marginTop: Platform.OS === 'ios' ? 56 : 56,
   },
   Content: {
     marginBottom: 20,

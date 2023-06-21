@@ -1,4 +1,10 @@
-import {View, Text, StyleSheet, ImageBackground} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  ImageBackground,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
 import AppPinPlaceLocation from '../AppPinPlaceLocation';
 import {FONT_LIGHT, FONT_MEDIUM} from '../../constants/Typography';
@@ -7,9 +13,12 @@ import AppTravelPriceBadge from '../AppTravelPriceBadge';
 import AppTravelActionButton from '../AppTravelActionButton';
 import {LinearGradient} from 'expo-linear-gradient';
 
-const AppTravelCard = () => {
+const AppTravelCard = ({onPress}) => {
   return (
-    <View style={styles.TravelCard}>
+    <TouchableOpacity
+      onPress={onPress}
+      activeOpacity={0.9}
+      style={styles.TravelCard}>
       <LinearGradient
         colors={['rgba(0,0,0,0.4)', 'rgba(37,37,37,0)', 'rgba(170,170,170,0)']}
         style={styles.LinearGradient}
@@ -29,7 +38,7 @@ const AppTravelCard = () => {
         </View>
       </View>
       <AppTravelActionButton />
-    </View>
+    </TouchableOpacity>
   );
 };
 
