@@ -10,7 +10,7 @@ import PlaneCircleSVG from '../../assets/svg/PlaneCircle.svg';
 
 import PlaneCircleActiveSVG from '../../assets/svg/PlaneCircleActive.svg';
 
-const AppTravelActionButton = () => {
+const AppTravelActionButton = ({containerStyle}) => {
   return (
     <LinearGradient
       colors={[
@@ -19,7 +19,7 @@ const AppTravelActionButton = () => {
         'rgba(11,13,11,0.74)',
         'rgba(15,17,15,1)',
       ]}
-      style={styles.Container}>
+      style={[styles.Container, containerStyle]}>
       <TouchableOpacity activeOpacity={0.8} style={styles.ButtonContainer}>
         <CheckCircleSVG />
         <Text style={styles.ButtonText}>Been</Text>

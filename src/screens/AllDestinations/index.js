@@ -23,8 +23,12 @@ const AllDestinationsScreen = () => {
   const headerHeight = getDefaultHeaderHeight(frame, false, insets.top);
   const statusBarHeight = useStatusBarHeight();
 
+  const onPress = () => {
+    navigation.navigate('Details');
+  };
+
   const renderItem = ({item, index}) => {
-    return <AppTravelCard />;
+    return <AppTravelCard onPress={onPress} />;
   };
 
   return (
@@ -71,6 +75,7 @@ const styles = StyleSheet.create({
   FlashListContainer: {
     paddingTop: 20,
     paddingHorizontal: 20,
+    paddingBottom: 70,
   },
   Container: {
     marginTop: 24,

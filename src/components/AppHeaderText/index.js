@@ -9,20 +9,22 @@ const AppHeaderText = ({header, subheader, message, hasBack}) => {
   const navigation = useNavigation();
 
   return (
-    <View style={styles.MainContainer}>
-      {hasBack && (
-        <Pressable onPress={() => navigation.goBack()}>
-          <Icon
-            name="chevron-left"
-            size={36}
-            color={COLORS.colorBackButton}
-            style={{
-              left: -10,
-            }}
-          />
-        </Pressable>
-      )}
-      {header && <Text style={styles.HeaderText}>{header}</Text>}
+    <View>
+      <View style={styles.MainContainer}>
+        {hasBack && (
+          <Pressable onPress={() => navigation.goBack()}>
+            <Icon
+              name="chevron-left"
+              size={36}
+              color={COLORS.colorBackButton}
+              style={{
+                left: -10,
+              }}
+            />
+          </Pressable>
+        )}
+        {header && <Text style={styles.HeaderText}>{header}</Text>}
+      </View>
       <View style={styles.Container}>
         {subheader && <Text style={styles.SubHeaderText}>{subheader}</Text>}
         {message && <Text style={styles.MessageText}>{message}</Text>}
@@ -36,9 +38,11 @@ export default AppHeaderText;
 const styles = StyleSheet.create({
   MainContainer: {
     flexDirection: 'row',
-    alignItems: 'center',
+    justifyContent: 'flex-start',
+    // alignItems: 'center',
   },
   Container: {
+    flexDirection: 'column',
     alignItems: 'flex-start',
   },
   HeaderText: {
