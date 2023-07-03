@@ -4,11 +4,29 @@ import MapPinSVG from '../../assets/svg/MapPin.svg';
 import {FONT_SEMI_BOLD} from '../../constants/Typography';
 import COLORS from '../../constants/Colors';
 
-const AppPinPlaceLocation = ({location}) => {
+const AppPinPlaceLocation = ({location, dark}) => {
   return (
     <View style={styles.Container}>
-      <MapPinSVG />
-      <Text style={styles.LocationText}>{location}</Text>
+      <MapPinSVG
+        style={{
+          marginRight: 6,
+        }}
+      />
+      <Text
+        style={[
+          styles.LocationText,
+          dark ? styles.LocationTextColor2 : styles.LocationTextColor1,
+        ]}>
+        {location}
+      </Text>
+      <View style={styles.LocationSeparator} />
+      <Text
+        style={[
+          styles.LocationText,
+          dark ? styles.LocationTextColor2 : styles.LocationTextColor1,
+        ]}>
+        9189.7 km
+      </Text>
     </View>
   );
 };
@@ -26,8 +44,19 @@ const styles = StyleSheet.create({
     fontSize: 12,
     lineHeight: 15,
     letterSpacing: 0.33,
-    color: COLORS.colorNote2,
-    marginLeft: 6,
     textTransform: 'uppercase',
+  },
+  LocationTextColor1: {
+    color: COLORS.colorNote2,
+  },
+  LocationTextColor2: {
+    color: '#5E6870',
+  },
+  LocationSeparator: {
+    width: 6,
+    height: 6,
+    borderRadius: 6,
+    backgroundColor: COLORS.colorBackButton,
+    marginHorizontal: 6,
   },
 });

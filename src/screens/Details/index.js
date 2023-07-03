@@ -1,11 +1,14 @@
 import {LinearGradient} from 'expo-linear-gradient';
 import React, {useLayoutEffect} from 'react';
-import {View, StyleSheet, Image, ScrollView, Text} from 'react-native';
+import {View, StyleSheet, Image, ScrollView} from 'react-native';
 import COLORS from '../../constants/Colors';
 import AppTravelActionButton from '../../components/AppTravelActionButton';
 import {useNavigation} from '@react-navigation/native';
 import AppTravelPriceBadge from '../../components/AppTravelPriceBadge';
-import AppPinPlaceLocation from '../../components/AppPinPlaceLocation';
+import DetailsPlace from './DetailsPlace';
+import DetailsPlaceDescription from './DetailsPlaceDescription';
+import DetailsTags from './DetailsTags';
+import DetailsPlaceFeatures from './DetailsPlaceFeatures';
 
 const DetailsScreen = () => {
   const navigation = useNavigation();
@@ -28,7 +31,9 @@ const DetailsScreen = () => {
   }, [navigation]);
 
   return (
-    <ScrollView style={styles.SafeAreaView}>
+    <ScrollView
+      style={styles.SafeAreaView}
+      contentContainerStyle={styles.ScrollView}>
       <View style={styles.TravelCard}>
         <LinearGradient
           colors={[
@@ -45,12 +50,14 @@ const DetailsScreen = () => {
         />
         <AppTravelActionButton containerStyle={styles.AppTravelActionButton} />
       </View>
-      <View>
-        <Text style={styles.LocationText}>Siargao</Text>
-        <AppPinPlaceLocation location="ASIA, PHILIPPINES" />
+      <View style={styles.MainContent}>
+        <DetailsPlace />
+        <DetailsPlaceDescription />
+        <DetailsTags />
+        <DetailsPlaceFeatures />
       </View>
     </ScrollView>
-  );
+  ); 
 };
 
 export default DetailsScreen;
@@ -59,6 +66,12 @@ const styles = StyleSheet.create({
   SafeAreaView: {
     flex: 1,
     backgroundColor: COLORS.colorContent2,
+  },
+  ScrollView: {
+    paddingBottom: 100,
+  },
+  MainContent: {
+    paddingHorizontal: 22,
   },
   TravelCard: {
     height: 481,
