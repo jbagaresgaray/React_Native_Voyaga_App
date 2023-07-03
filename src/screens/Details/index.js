@@ -32,6 +32,7 @@ const DetailsScreen = () => {
 
   return (
     <ScrollView
+      nestedScrollEnabled
       style={styles.SafeAreaView}
       contentContainerStyle={styles.ScrollView}>
       <View style={styles.TravelCard}>

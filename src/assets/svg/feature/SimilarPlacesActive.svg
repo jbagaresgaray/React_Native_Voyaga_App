@@ -1,0 +1,39 @@
+
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="51.4610648%" y1="84.4474871%" x2="51.4610648%" y2="0%" id="linearGradient-qtquizprhs-1">
+            <stop stop-color="#D23078" offset="0%"></stop>
+            <stop stop-color="#FE6161" offset="72.5625797%"></stop>
+            <stop stop-color="#FF7955" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-qtquizprhs-2" cx="40" cy="40" r="25"></circle>
+        <filter x="-34.0%" y="-26.0%" width="168.0%" height="168.0%" filterUnits="objectBoundingBox" id="filter-qtquizprhs-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="All-Destination" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Details-Similar-places" transform="translate(-312, -1197)">
+            <g id="Group-5" transform="translate(0, 1135)">
+                <g id="Group-5-Copy" transform="translate(32, 62)">
+                    <g id="similar-places" transform="translate(276, 0)">
+                        <g id="icon" transform="translate(4, 0)">
+                            <circle id="Oval" fill-opacity="0.05" fill="#F4327F" cx="40" cy="40" r="40"></circle>
+                            <circle id="Oval-Copy-3" fill-opacity="0.1" fill="#F4327F" cx="40" cy="40" r="32"></circle>
+                            <g id="Oval-Copy-2">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-qtquizprhs-3)" xlink:href="#path-qtquizprhs-2"></use>
+                                <use fill="#E9486D" fill-rule="evenodd" xlink:href="#path-qtquizprhs-2"></use>
+                                <use fill-opacity="0.75" fill="url(#linearGradient-qtquizprhs-1)" fill-rule="evenodd" xlink:href="#path-qtquizprhs-2"></use>
+                            </g>
+                            <g id="map-24px" transform="translate(28, 28)">
+                                <path d="M20.5,3 L20.34,3.03 L15,5.1 L9,3 L3.36,4.9 C3.15,4.97 3,5.15 3,5.38 L3,20.5 C3,20.78 3.22,21 3.5,21 L3.66,20.97 L9,18.9 L15,21 L20.64,19.1 C20.85,19.03 21,18.85 21,18.62 L21,3.5 C21,3.22 20.78,3 20.5,3 Z M15,19 L9,16.89 L9,5 L15,7.11 L15,19 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

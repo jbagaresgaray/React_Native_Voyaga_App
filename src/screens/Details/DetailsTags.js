@@ -26,9 +26,20 @@ export default DetailsTags;
 
 const styles = StyleSheet.create({
   MainContainer: {
+    marginTop: 30,
+    marginBottom: 10,
     paddingVertical: 20,
     paddingHorizontal: 22,
-    backgroundColor: COLORS.colorWhite,
+    backgroundColor: COLORS.colorContent,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+
+    elevation: 4,
   },
   Title: {
     ...FONT_SEMI_BOLD,

@@ -1,0 +1,41 @@
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="51.4610648%" y1="84.4474871%" x2="51.4610648%" y2="0%" id="linearGradient-04jutloea_-1">
+            <stop stop-color="#D23078" offset="0%"></stop>
+            <stop stop-color="#FE6161" offset="72.5625797%"></stop>
+            <stop stop-color="#FF7955" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-04jutloea_-2" cx="40" cy="40" r="25"></circle>
+        <filter x="-34.0%" y="-26.0%" width="168.0%" height="168.0%" filterUnits="objectBoundingBox"
+            id="filter-04jutloea_-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1">
+            </feColorMatrix>
+        </filter>
+    </defs>
+    <g id="All-Destination" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Details-getting-there" transform="translate(-20, -1192)">
+            <g id="Feature" transform="translate(0, 1129)">
+                <g id="icon" transform="translate(20, 63)">
+                    <circle id="Oval-Copy-2" fill="#E2E3E4" cx="40" cy="40" r="25"></circle>
+                    <circle id="Oval" fill-opacity="0.05" fill="#F4327F" cx="40" cy="40" r="40"></circle>
+                    <circle id="Oval-Copy-3" fill-opacity="0.1" fill="#F4327F" cx="40" cy="40" r="32"></circle>
+                    <g id="Oval-Copy-2">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-04jutloea_-3)"
+                            xlink:href="#path-04jutloea_-2"></use>
+                        <use fill="#E9486D" fill-rule="evenodd" xlink:href="#path-04jutloea_-2"></use>
+                        <use fill-opacity="0.75" fill="url(#linearGradient-04jutloea_-1)" fill-rule="evenodd"
+                            xlink:href="#path-04jutloea_-2"></use>
+                    </g>
+                    <path
+                        d="M50,44 L50,42 L42,37 L42,31.5 C42,30.67 41.33,30 40.5,30 C39.67,30 39,30.67 39,31.5 L39,37 L31,42 L31,44 L39,41.5 L39,47 L37,48.5 L37,50 L40.5,49 L44,50 L44,48.5 L42,47 L42,41.5 L50,44 Z"
+                        id="Path" fill="#FFFFFF" fill-rule="nonzero"
+                        transform="translate(40.5, 40) rotate(46) translate(-40.5, -40)"></path>
+                    <polygon id="Path" points="29 28 53 28 53 52 29 52"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
