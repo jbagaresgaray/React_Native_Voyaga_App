@@ -57,7 +57,7 @@ const DetailsScreen = () => {
         <DetailsPlaceFeatures />
       </View>
     </ScrollView>
-  ); 
+  );
 };
 
 export default DetailsScreen;
@@ -70,9 +70,7 @@ const styles = StyleSheet.create({
   ScrollView: {
     paddingBottom: 100,
   },
-  MainContent: {
-    paddingHorizontal: 22,
-  },
+  MainContent: {},
   TravelCard: {
     height: 481,
     marginBottom: 20,

@@ -22,6 +22,7 @@ export default DetailsPlaceDescription;
 const styles = StyleSheet.create({
   DescriptionContainer: {
     marginTop: 30,
+    marginHorizontal: 22,
   },
   DescriptionTitle: {
     ...FONT_SEMI_BOLD,
